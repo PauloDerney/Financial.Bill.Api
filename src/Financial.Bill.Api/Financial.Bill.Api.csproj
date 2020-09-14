@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Financial.Framework.Api" Version="1.0.0-CI-20200913-213220" />
+    <PackageReference Include="Financial.Framework.Domain" Version="1.0.0-CI-20200913-213238" />
+    <PackageReference Include="Financial.Framework.Infra.Data" Version="1.0.0-CI-20200913-213234" />
+    <PackageReference Include="Financial.Framework.Infra.Service" Version="1.0.0-CI-20200913-213205" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Settings.AppSettings" Version="2.2.2" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.3.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.3.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Financial.Bill.Domain\Financial.Bill.Domain.csproj" />
+  </ItemGroup>
+
+
+</Project>
