@@ -10,12 +10,14 @@ Outra tecnologias utilizadas
 
 O projeto faz uso de uma biblioteca de facilitadores que atualmente está versionado no vso com o deploy dos artefatos automatizado configurado, em breve realizarei a migração para o github.
 
-Fluxo da API
-![](../master/docs/fluxograma_financial_bill_api.PNG?raw=true)
+__Fluxo da API__  
 
-Inicialmente para atender as necessidades negociais da api, temos os endpoints abaixo.
+![](https://github.com/PauloDerney/Financial.Bill.Api/blob/master/docs/fluxograma_financial_bill_api.png)
 
-Swagger
-![](../master/docs/swagger_doc.PNG?raw=true)
+Inicialmente para atender as necessidades negociais da api, temos os endpoints abaixo.  
+
+__Swagger Doc__  
+
+![](https://github.com/PauloDerney/Financial.Bill.Api/blob/master/docs/swagger_doc.png)  
 
 Esse repositorio foi criado para estudos e está na versão inicial e será alimentando gradativamente.
