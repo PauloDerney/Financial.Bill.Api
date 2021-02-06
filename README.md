@@ -15,7 +15,7 @@ Fluxo da API
 
 Inicialmente para atender as necessidades negociais da api, temos os endpoints abaixo.
 
-Swagger Doc
+Swagger
 ![](../master/docs/swagger_doc.PNG?raw=true)
 
 Esse repositorio foi criado para estudos e está na versão inicial e será alimentando gradativamente.
