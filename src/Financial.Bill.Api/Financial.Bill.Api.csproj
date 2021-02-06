@@ -36,5 +36,11 @@
     <ProjectReference Include="..\Financial.Bill.Domain\Financial.Bill.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 
 </Project>

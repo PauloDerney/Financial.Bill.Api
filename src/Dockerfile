@@ -3,11 +3,8 @@ WORKDIR /src
 
 COPY *.config ./
 COPY *sln ./
-COPY Api/Api.csproj Api/
-COPY Domain/Domain.csproj Domain/
-COPY Infra.Data.Command/Infra.Data.Command.csproj Infra.Data.Command/
-COPY Infra.Data.Query/Infra.Data.Query.csproj Infra.Data.Query/
-COPY Infra.Service/Infra.Service.csproj Infra.Service/
+COPY Financial.Bill.Api/Financial.Bill.Api.csproj Financial.Bill.Api/
+COPY Financial.Bill.Domain/Financial.Bill.Domain.csproj Financial.Bill.Domain/
 RUN dotnet restore
 
 COPY . ./
@@ -17,4 +14,4 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /src
 EXPOSE 80
 COPY --from=build-env /src/out .
-ENTRYPOINT ["dotnet", "Api.dll"]
+ENTRYPOINT ["dotnet", "Financial.Bill.Api.dll"]

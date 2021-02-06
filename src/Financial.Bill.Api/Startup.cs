@@ -3,6 +3,7 @@ using Financial.Bill.Domain.Commands.v1.BillAdd;
 using Financial.Bill.Domain.Queries.v1.BillSearchPaginated;
 using Financial.Framework.Domain.DependencyInjection;
 using Financial.Framework.Infra.Data.DependencyInjection;
+using Financial.Framework.Infra.Service.AppModels;
 using Financial.Framework.Infra.Service.DependencyInjection;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -32,6 +33,9 @@ namespace Financial.Bill.Api
             services.InjectDomain();
 
             services.InjectMessageQueue(Configuration);
+            
+            //Todo: remover após atualizar nuget
+            services.Configure<QueueSettings>(Configuration.GetSection("QueueSettings"));
 
             services.AddMediatR(typeof(BillAddCommandHandler), typeof(BillSearchPaginatedQueryHandler));
 
