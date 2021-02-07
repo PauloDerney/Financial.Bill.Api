@@ -1,4 +1,4 @@
-# Financial.Bill.
+# Financial.Bill.Api
 
 Este projeto é um micro serviço que tem a responsabilidade de adicionar, desativar e remover contas.
 
