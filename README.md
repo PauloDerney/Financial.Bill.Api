@@ -12,7 +12,7 @@ O projeto faz uso de uma biblioteca de facilitadores que atualmente está versio
 
 __Fluxo da API__  
 
-![](https://github.com/PauloDerney/Financial.Bill.Api/blob/master/docs/fluxograma_financial_bill_api.png)
+![](https://github.com/PauloDerney/Financial.Bill.Api/blob/master/docs/flow_financial_bill_api.png)
 
 Inicialmente para atender as necessidades negociais da api, temos os endpoints abaixo.  
 
