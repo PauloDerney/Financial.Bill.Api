@@ -14,6 +14,6 @@
 
         public void Deactivate() => Active = false;
 
-        public bool NotFilled() => Installments <= 0 || BaseValue <= 0 || DueDay <= 0 || DueDay > 31;
+        public bool IsNotFilled() => Installments <= 0 || BaseValue <= 0 || DueDay <= 0 || DueDay > 31;
     }
 }

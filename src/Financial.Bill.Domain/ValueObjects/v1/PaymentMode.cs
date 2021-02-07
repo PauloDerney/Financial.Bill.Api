@@ -15,7 +15,7 @@ namespace Financial.Bill.Domain.ValueObjects.v1
 
         public DateTime EffectiveDate { get; set; }
 
-        public bool NotFilled() =>
+        public bool IsNotFilled() =>
             EffectiveDate == DateTime.MinValue ||
             !Enum.IsDefined(typeof(PaymentType), PaymentType) ||
             PaymentType == PaymentType.InternetBanking && FinancialSourceId == null ||

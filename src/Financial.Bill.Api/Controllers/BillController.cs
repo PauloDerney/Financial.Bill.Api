@@ -17,6 +17,7 @@ namespace Financial.Bill.Api.Controllers
     public class BillController : RestApi<BillController>
     {
         private readonly IBaseRepository<Domain.Entities.v1.Bill> _billRepository;
+
         public BillController(IMediator mediator,
                               INotificationService notificationService,
                               ILogger<BillController> logger,

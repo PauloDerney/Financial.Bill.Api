@@ -10,7 +10,7 @@ namespace Financial.Bill.Domain.ValueObjects.v1
 
         public string ModifiedBy { get; set; }
 
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
 
         public void SetModifiedVersion(string user)
         {

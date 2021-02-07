@@ -43,10 +43,10 @@ namespace Financial.Bill.Domain.Entities.v1
             => Amount == null && BillType == BillType.ExpenseSingle;
 
         private bool InvalidPaymentMode() 
-            => BillType == BillType.ExpenseSingle && PaymentMode == null || PaymentMode.NotFilled();
+            => BillType == BillType.ExpenseSingle && PaymentMode == null || PaymentMode.IsNotFilled();
 
         private bool InvalidFixedBill() 
-            => BillType == BillType.MonthlySpend && (FixedBill == null || FixedBill.NotFilled());
+            => BillType == BillType.MonthlySpend && (FixedBill == null || FixedBill.IsNotFilled());
 
         public override bool IsValid()
         {
