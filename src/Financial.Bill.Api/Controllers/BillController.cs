@@ -9,6 +9,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace Financial.Bill.Api.Controllers
@@ -28,7 +29,7 @@ namespace Financial.Bill.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostAsync([FromBody]BillAddCommand command) => await GetResultAsync(command);
+        public async Task<IActionResult> PostAsync([FromBody]BillAddCommand command) => await GetResultAsync(command, HttpStatusCode.Created);
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdAsync(Guid id) => await GetResultAsync(async () => await _billRepository.GetByIdAsync(id));

@@ -34,9 +34,6 @@ namespace Financial.Bill.Api
 
             services.InjectMessageQueue(Configuration);
             
-            //Todo: remover após atualizar nuget
-            services.Configure<QueueSettings>(Configuration.GetSection("QueueSettings"));
-
             services.AddMediatR(typeof(BillAddCommandHandler), typeof(BillSearchPaginatedQueryHandler));
 
             services.AddMvc();

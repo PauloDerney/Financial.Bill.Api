@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
-    <PackageReference Include="Financial.Framework.Api" Version="1.0.0-CI-20200913-213220" />
-    <PackageReference Include="Financial.Framework.Domain" Version="1.0.0-CI-20200913-213238" />
-    <PackageReference Include="Financial.Framework.Infra.Data" Version="1.0.0-CI-20200913-213234" />
-    <PackageReference Include="Financial.Framework.Infra.Service" Version="1.0.0-CI-20200913-213205" />
+    <PackageReference Include="Financial.Framework.Api" Version="1.0.0-8" />
+    <PackageReference Include="Financial.Framework.Domain" Version="1.0.0-8" />
+    <PackageReference Include="Financial.Framework.Infra.Data" Version="1.0.0-8" />
+    <PackageReference Include="Financial.Framework.Infra.Service" Version="1.0.0-8" />
     <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.3" />
