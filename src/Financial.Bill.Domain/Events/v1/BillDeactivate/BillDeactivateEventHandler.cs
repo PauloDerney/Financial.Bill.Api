@@ -9,7 +9,7 @@ namespace Financial.Bill.Domain.Events.v1.BillDeactivate
 {
     public class BillDeactivateEventHandler : EventHandler<BillDeactivateEventHandler>, INotificationHandler<BillDeactivateEvent>
     {
-        public BillDeactivateEventHandler(IMessageQueueService messageQueueService, ILogger<BillDeactivateEventHandler> logger) : base(messageQueueService, logger)
+        public BillDeactivateEventHandler(IPublisherService messageQueueService, ILogger<BillDeactivateEventHandler> logger) : base(messageQueueService, logger)
         {
         }
 

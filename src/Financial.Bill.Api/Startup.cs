@@ -1,10 +1,8 @@
-using AutoMapper;
 using Financial.Bill.Domain.Commands.v1.BillAdd;
 using Financial.Bill.Domain.Queries.v1.BillSearchPaginated;
 using Financial.Framework.Domain.DependencyInjection;
 using Financial.Framework.Infra.Data.DependencyInjection;
-using Financial.Framework.Infra.Service.AppModels;
-using Financial.Framework.Infra.Service.DependencyInjection;
+using Financial.Framework.MessageBroker.DependencyInjection;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,7 +30,7 @@ namespace Financial.Bill.Api
 
             services.InjectDomain();
 
-            services.InjectMessageQueue(Configuration);
+            services.InjectPublisher(Configuration);
             
             services.AddMediatR(typeof(BillAddCommandHandler), typeof(BillSearchPaginatedQueryHandler));
 

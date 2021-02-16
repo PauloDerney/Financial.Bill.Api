@@ -1,15 +1,15 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Financial.Framework.Domain.Handlers;
+﻿using Financial.Framework.Domain.Handlers;
 using Financial.Framework.Domain.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Financial.Bill.Domain.Events.v1.BillAdd
 {
     public class BillAddEventHandler : EventHandler<BillAddEventHandler>, INotificationHandler<BillAddEvent>
     {
-        public BillAddEventHandler(IMessageQueueService messageQueueService, ILogger<BillAddEventHandler> logger) : base(messageQueueService, logger)
+        public BillAddEventHandler(IPublisherService messageQueueService, ILogger<BillAddEventHandler> logger) : base(messageQueueService, logger)
         {
         }
 

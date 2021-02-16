@@ -17,10 +17,10 @@ namespace Financial.Bill.Domain.Commands.v1.BillAdd
         private readonly IMapper _mapper;
         
         public BillAddCommandHandler(INotificationService notificationService, 
-                                        ILogger<BillAddCommandHandler> logger,
-                                        IBaseRepository<Entities.v1.Bill> accountRepository,
-                                        IMediator mediator,
-                                        IMapper mapper) : base(notificationService, logger)
+                                     ILogger<BillAddCommandHandler> logger,
+                                     IBaseRepository<Entities.v1.Bill> accountRepository,
+                                     IMediator mediator,
+                                     IMapper mapper) : base(notificationService, logger)
         {
             _accountRepository = accountRepository;
             _mediator = mediator;
