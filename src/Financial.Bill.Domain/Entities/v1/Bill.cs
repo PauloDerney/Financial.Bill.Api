@@ -14,6 +14,8 @@ namespace Financial.Bill.Domain.Entities.v1
 
         public string Name { get; set; }
 
+        public Guid? ReferenceBillId { get; set; }
+
         public bool IsBillMain { get; set; } = true;
 
         public string Description { get; set; }
